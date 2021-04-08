@@ -82,6 +82,9 @@
 /* /ES.7 */
 
 /* ES.8 */
+.ex-8-img{
+    transition: 2s;
+}
 .ex-8-img:hover{
     filter: hue-rotate(180deg) brightness(0.90);
     border-radius: 10px;
@@ -126,7 +129,7 @@
 
 .ex-11-icon:hover{
     animation-name: partialSpin;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     animation-timing-function: linear;
 }
 @keyframes partialSpin{
@@ -175,8 +178,7 @@
 /* ES.12 */
 .ex-12-button:hover .ex-12-top-white {
     animation-name: TopWhiteLeft;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
+    animation-duration: 2s;
     animation-timing-function: linear; 
 }
 @keyframes TopWhiteLeft {
@@ -192,8 +194,7 @@
 }
 .ex-12-button:hover .ex-12-bottom-white {
     animation-name: BottomWhiteRight;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
+    animation-duration: 2s;
     animation-timing-function: linear; 
 }
 @keyframes BottomWhiteRight {
@@ -208,3 +209,69 @@
     }
 }
 /* /ES.12 */
+
+/* ES. 13 */
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: AroundTopWhite;
+    animation-duration: 2.5s;
+    animation-timing-function: linear; 
+}
+@keyframes AroundTopWhite {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: 75%;
+        top: -10px;
+    }
+    45% {
+        left: 80%;
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+    
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: AroundBottomWhite;
+    animation-duration: 2.5s;
+    animation-timing-function: linear; 
+}
+ @keyframes AroundBottomWhite {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: 75%;
+        bottom: -10px;
+    }
+    45% {
+        right: 80%;
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
+/* /ES.13 */
