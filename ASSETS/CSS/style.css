@@ -39,8 +39,7 @@
     width: 100px;
     height: 100px;
     background: red;
-    transition: 3s;
-    
+    transition: 3s;   
 }
 .ex-4-square:hover{
     opacity: 0;
@@ -67,13 +66,59 @@
     width: 500px;
 }
 
+/* ES.6 */
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+/* /ES.6 */
+
+/* ES.7 */
+.ex-7-img{
+    transition: 2s;
+}
+.ex-7-img:hover{
+    filter: contrast(200%) brightness(150%);
+}
+/* /ES.7 */
+
+/* ES.8 */
+.ex-8-img:hover{
+    filter: hue-rotate(180deg) brightness(0.90);
+    border-radius: 10px;
+}
+/* /ES.8 */
+
+/* ES.9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 1s;
 }
+.ex-9-img:hover{
+    filter: invert(100%) saturate(4);
+    border-radius: 10px;
+    transform: scale(1.5); 
+}
+/* /ES.9 */
+
+/* ES.10 */
 .ex-10-icon {
     font-size: 60px;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
 }
+@keyframes spin {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+/* /ES.10 */
+
 .ex-11-icon {
     font-size: 60px;
 }
